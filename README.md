@@ -13,10 +13,10 @@ The following GIF demonstrates a short run of the simulation created inside the 
 ## 📘 Overview  
 This project implements a **philosophically grounded agent-based simulation** based on:
 
-- **Spinoza’s concept of Conatus** (self-preservation power)  
+- **Spinoza’s concept of Conatus** (self-preservation power)    
 - **Affects (Joy & Sadness)** and their modulation  
 - **Emergent behavioral dynamics** in a social network  
-- **Population cycles**, **external shocks**, and **complex systems**
+- **Population cycles**, **external shocks**, and **complex systems**  
 
 The simulation is rendered in **3D using Ursina Engine**, and includes features such as relationship lines, collective mood visualization, event triggers, and analytical plots.
 
@@ -28,18 +28,18 @@ The simulation is rendered in **3D using Ursina Engine**, and includes features 
 - Relationships (love / hate) and spherical spatial distribution  
 - **Events**: Disaster, Boom, Epidemic, Innovation  
 - Real-time 3D visualization  
-- Automatic **report generation** (matplotlib)  
-- Automatic **GIF preview generator** (imageio)
-Spinoza-Simulation/
-│
-├─ docs/ # Additional documentation
-├─ gif_frames/ # Raw screenshot frames (auto-generated)
-├─ preview/
-│ └─ spinoza_simulation.gif # 🔥 Preview GIF used in README
-│
-├─ analysis.py # Plot generator for multi-session analytics
-├─ main.py # Main Ursina simulation
-└─ requirements.txt
+- Automatic **report generation** (matplotlib)    
+- Automatic **GIF preview generator** (imageio)  
+Spinoza-Simulation/  
+│  
+├─ docs/ # Additional documentation  
+├─ gif_frames/ # Raw screenshot frames (auto-generated)  
+├─ preview/  
+│ └─ spinoza_simulation.gif # 🔥 Preview GIF used in README  
+|  
+├─ analysis.py # Plot generator for multi-session analytics  
+├─ main.py # Main Ursina simulation  
+└─ requirements.txt  
 
 ---
 
@@ -56,15 +56,15 @@ A GIF is automatically created at:
 
 preview/spinoza_simulation.gif
 
-⌨️ Controls
-Key	Action
-D	Trigger Disaster
-B	Trigger Boom
-E	Trigger Epidemic
-I	Trigger Innovation
-Enter	Save session & reset
-Esc	Show all reports
-Space	Clear focus
+⌨️ Controls  
+Key	Action  
+D	Trigger Disaster  
+B	Trigger Boom  
+E	Trigger Epidemic  
+I	Trigger Innovation  
+Enter	Save session & reset  
+Esc	Show all reports  
+Space	Clear focus  
 📊 Reports
 
 All completed sessions are stored and can be viewed through matplotlib plots showing:
