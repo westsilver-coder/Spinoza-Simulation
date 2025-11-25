@@ -56,14 +56,14 @@ A GIF is automatically created at:
 preview/spinoza_simulation.gif
 
 ### ⌨️ Controls   
-Key     |  Action  
-D	      |  Trigger Disaster  
-B	      |  Trigger Boom  
-E	      |  Trigger Epidemic  
-I	      |  Trigger Innovation  
-Enter	  |  Save session & reset  
-Esc     |  Show all reports  
-Space   |  Clear focus  
+Key  -  Action  
+- D: Trigger Disaster  
+- B: Trigger Boom  
+- E: Trigger Epidemic  
+- I: Trigger Innovation  
+- Enter: Save session & reset  
+- Esc: Show all reports  
+- Space: Clear focus  
 
 ### 📊 Reports  
 All completed sessions are stored and can be viewed through matplotlib plots showing:  
