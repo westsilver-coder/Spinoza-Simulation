@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Project Architecture Overview
 
 This document describes the internal structure of the Spinoza Dynamic Equilibrium Simulation.
@@ -136,4 +137,144 @@ Event system maintains same dynamics as main.py
 
 Gini coefficient computation
 
+=======
+Project Architecture Overview
+
+This document describes the internal structure of the Spinoza Dynamic Equilibrium Simulation.
+The project consists of two main components:
+
+simulation/
+ ├── main.py        # Real-time 3D simulation (Ursina engine)
+ └── analysis.py    # Statistical batch analysis (Monte Carlo)
+
+1. main.py — Real-Time Simulation Architecture
+1.1 Core Components
+Component	Description
+SpinozaAgent	Individual entity with emotional & biological state variables
+update()	Main simulation loop executed every frame
+handle_event()	Processes external events (Disaster, Boom, etc.)
+create_world()	Initializes all agents and UI
+Visualization Layer	Ursina engine for 3D rendering, colors, lines, focusing
+1.2 Agent Model Structure
+
+Each agent stores:
+
+Intrinsic Traits
+
+base_reason — affects resilience against sadness
+
+base_vitality — baseline conatus
+
+Affective State
+
+joy
+
+sadness
+
+Biological Traits
+
+metabolism — natural entropy
+
+recovery_rate — healing speed
+
+Social Traits
+
+generosity
+
+relationships {id → affinity}
+
+1.3 Simulation Flow
+
+Each simulation frame includes:
+
+Interaction Phase
+
+Random agents interact
+
+Cooperation or conflict
+
+Relationship memory updated
+
+Natural Flux Phase
+
+Joy decays (metabolism)
+
+Random fluctuation
+
+Rational recovery
+
+Death Phase
+
+Conatus ≤ 0 → death
+
+Age-based probability death
+
+Birth Phase
+
+Logistic growth formula
+
+Respawn when population low
+
+Visualization Update
+
+Color (Conatus gradient)
+
+Scale (Agent size = conatus)
+
+Relationship lines
+
+1.4 Event System
+Event	Effect
+Disaster	big joy loss, sadness increase
+Boom	joy increase, sadness cleared
+Epidemic	recovery_rate decreased
+Innovation	metabolism decrease
+
+Events include streak multipliers → repeated events compound effects.
+
+2. analysis.py — Statistical Analysis Architecture
+2.1 Purpose
+
+Validate stability of the Spinoza Agent Model
+
+Find tipping points where society collapses
+
+Perform Monte Carlo experiments
+
+Analyze inequality via Gini coefficient
+
+2.2 Analysis Features
+
+Convergence Analysis
+
+Disaster Sensitivity Curve
+
+Monte Carlo Summary with 100 runs
+
+Inequality (Gini) Dynamics
+
+2.3 Batch Simulation Engine
+
+Vectorized implementation:
+
+agents[ :, 0] = reason
+agents[ :, 1] = joy
+agents[ :, 2] = sadness
+agents[ :, 3] = metabolism
+agents[ :, 4] = recovery_rate
+agents[ :, 5] = generosity
+agents[ :, 6] = alive_flag
+
+
+No 3D rendering → runs 100× faster
+
+Event system maintains same dynamics as main.py
+
+2.4 Statistical Tools
+
+95% CI using Standard Error
+
+Gini coefficient computation
+
+>>>>>>> 87b074bb4b60459ed9a123cee87f3ee066665167
 Collapse probability estimation
