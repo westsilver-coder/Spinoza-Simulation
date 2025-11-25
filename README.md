@@ -35,7 +35,7 @@ Spinoza-Simulation/
 ├─ docs/ # Additional documentation  
 ├─ gif_frames/ #Raw screenshot frames (auto-generated)  
 ├─ preview/  
-│ └─ spinoza_simulation.gif  #🔥 Preview GIF used in README  
+│ └─ spinoza_simulation.gif  #Preview GIF used in README  
 │  
 ├─ analysis.py # Plot generator for multi-session analytics  
 ├─ main.py # Main Ursina simulation  
