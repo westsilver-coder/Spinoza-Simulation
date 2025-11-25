@@ -47,13 +47,13 @@ Spinoza-Simulation/
 ### 1) Install dependencies  
 ```bash
 pip install -r requirements.txt
-2) Run simulation
+
+### 2) Run simulation
 python main.py
 
-3) Generate Preview GIF (auto)
+### 3) Generate Preview GIF (auto)
 
-A GIF is automatically created at:
-
+A GIF is automatically created at:  
 preview/spinoza_simulation.gif
 
 ⌨️ Controls  
