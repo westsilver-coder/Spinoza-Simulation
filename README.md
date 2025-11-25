@@ -55,33 +55,26 @@ python main.py
 A GIF is automatically created at:  
 preview/spinoza_simulation.gif
 
-⌨️ Controls  
-Key	Action  
-D	Trigger Disaster  
-B	Trigger Boom  
-E	Trigger Epidemic  
-I	Trigger Innovation  
-Enter	Save session & reset  
-Esc	Show all reports  
-Space	Clear focus  
-📊 Reports
+### ⌨️ Controls   
+Key     |  Action  
+D	      |  Trigger Disaster  
+B	      |  Trigger Boom  
+E	      |  Trigger Epidemic  
+I	      |  Trigger Innovation  
+Enter	  |  Save session & reset  
+Esc     |  Show all reports  
+Space   |  Clear focus  
 
-All completed sessions are stored and can be viewed through matplotlib plots showing:
+### 📊 Reports  
+All completed sessions are stored and can be viewed through matplotlib plots showing:  
+- Average Conatus  
+- Population Size  
+- Event markers
 
-Average Conatus
-
-Population Size
-
-Event markers
-
-📜 License
-
+📜 License  
 MIT License.
 
-🤝 Contribution
-
+🤝 Contribution  
 Contributions, ideas, and philosophical discussions are welcome.
 
----
 
-## 📂 Project Structure  
